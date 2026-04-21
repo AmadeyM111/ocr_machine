@@ -11,3 +11,5 @@ pytesseract==0.3.13
 python-dotenv==1.2.2
 typing-inspection==0.4.2
 typing_extensions==4.15.0
+logging
+pathlib
