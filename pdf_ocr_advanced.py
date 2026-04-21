@@ -118,7 +118,7 @@ class ImagePreprocessor:
             return 0.0
         
         angles = []
-        for rho, theta in lines[:20]:
+        for rho, theta in (line[0] for line in lines[:20]):
             angle = (theta * 180 / np.pi) - 90
             if abs(angle) < self.config.deskew_max_angle:
                 angles.append(angle)
