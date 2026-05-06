@@ -156,3 +156,71 @@ cython_debug/
 /.continue/
 /local_dev/.env
 /local_dev/
+
+# ── Data & vector databases ─────────────────────
+data/raw/
+data/processed/
+chroma_legal_db/
+*.chromadb
+*.csv
+*.parquet
+*.feather
+*.zip
+*.tar.gz
+*.pdf
+*.docx
+*.jsonl
+
+# Exceptions — small samples and eval files (must be committed)
+!data/sample/
+!data/evaluation/
+!data/evaluation/test_*.json
+!data/evaluation/*.md
+
+# ── Models & checkpoints ───────────────────────
+checkpoints/
+weights/
+models/
+*/models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+*.h5
+*.pkl
+*.joblib
+*.onnx
+
+# ── Virtual environments ───────────────────────
+.venv/
+venv/
+env/
+.env*/
+ENV/
+
+# ── Caches & logs ───────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.cache/
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+wandb/
+mlflow/
+tensorboard/
+logs/
+.DS_Store
+Thumbs.db
+
+# ── Test / debug scripts ───────────────────────
+test*.py
+debug*.py
+tmp*/
+temp*/
+
+# ── IDE / editor files ─────────────────────────
+.idea/
+.vscode/
